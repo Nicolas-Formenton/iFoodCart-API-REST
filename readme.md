@@ -1,7 +1,5 @@
 ## Aula 01
 
-<hr>
-
 - Domínio da Aplicação (POO)
 - Consumo da API (iFood)
      ![Requisição API](.//Requisi%C3%A7%C3%A3oAPI.png)
@@ -15,7 +13,7 @@
     - Construir Modelos(Simular, testar, experimentar)
 
 ### Paradigma de Programação Orientada a Objetos (POO)
-    > Modelo de análise, projeto e programação baseado na aproximação entre o mundo real e o mundo virtual, através da criação e interação entre Classes, Atributos, Métodos, objetos, entre outros...
+> Modelo de análise, projeto e programação baseado na aproximação entre o mundo real e o mundo virtual, através da criação e interação entre Classes, Atributos, Métodos, objetos, entre outros...
 
 ##### 4 Pilares da POO (Princípio da Abstração):
     - Encapsulamento
@@ -28,12 +26,10 @@
 
     > Objetos: Representa o geral, o total, o que engloba as classes(Ex: Casa)
 
-###Diagrama ER
+### Diagrama ER
 ![Diagrama ER](./Diagrama%20ER.jpeg)
 
 # Aula 02
-
-<hr>
 
 ## Construção de uma `API REST` com `JAVA` e `SPRING BOOT`
 - Objetivo da aula:
@@ -42,7 +38,7 @@
 ###### Arquitetura de uma Aplicação SpringBoot
 ![SpringBoot Architecture](./SpringBoot%20Architecture.jpeg)
 
-```css
+```html
 Utilizaremos as seguintes dependências:
     - Spring WEB (RESTful)
         > Apache Tomcat Container.
