@@ -15,7 +15,7 @@
     - Construir Modelos(Simular, testar, experimentar)
 
 ### Paradigma de Programação Orientada a Objetos (POO)
-> Modelo de análise, projeto e programação baseado na aproximação entre o mundo real e o mundo virtual, através da criação e interação entre Classes, Atributos, Métodos, objetos, entre outros...
+    > Modelo de análise, projeto e programação baseado na aproximação entre o mundo real e o mundo virtual, através da criação e interação entre Classes, Atributos, Métodos, objetos, entre outros...
 
 ##### 4 Pilares da POO (Princípio da Abstração):
     - Encapsulamento
@@ -23,10 +23,10 @@
     - Composição
     - Polimorfismo
 
-###### Classe x Objeto
-Classe: Aonde se encontram as características, funcionalidades(Ex: Ambientes da Casa)
+##### Classe x Objeto
+    > Classe: Aonde se encontram as características, funcionalidades(Ex: Ambientes da Casa)
 
-Objetos: Representa o geral, o total, o que engloba as classes(Ex: Casa)
+    > Objetos: Representa o geral, o total, o que engloba as classes(Ex: Casa)
 
 ###Diagrama ER
 ![Diagrama ER](./Diagrama%20ER.jpeg)
