@@ -4,7 +4,7 @@
 
 - Domínio da Aplicação (POO)
 - Consumo da API (iFood)
-     ![Requisição API](..//Requisi%C3%A7%C3%A3oAPI.png)
+     ![Requisição API](.//Requisi%C3%A7%C3%A3oAPI.png)
 - Passo a passo Pensamento Computacional    
     - Coletar os dados
     - Analisar os dados
@@ -25,10 +25,11 @@
 
 ###### Classe x Objeto
 Classe: Aonde se encontram as características, funcionalidades(Ex: Ambientes da Casa)
+
 Objetos: Representa o geral, o total, o que engloba as classes(Ex: Casa)
 
 ###Diagrama ER
-![Diagrama ER](../Diagrama%20ER.jpeg)
+![Diagrama ER](./Diagrama%20ER.jpeg)
 
 # Aula 02
 
@@ -39,7 +40,7 @@ Objetos: Representa o geral, o total, o que engloba as classes(Ex: Casa)
     - A partir da abstração realizada na aula anterior, iremos modelar e desenvolver uma API REST usando a linguagem de programação Java e o framework Spring Boot. Para isso, entenderemos o estilo arquitetural REST e a estrutura de projetos Spring.
 
 ###### Arquitetura de uma Aplicação SpringBoot
-![SpringBoot Architecture](../SpringBoot%20Architecture.jpeg)
+![SpringBoot Architecture](./SpringBoot%20Architecture.jpeg)
 
 ```css
 Utilizaremos as seguintes dependências:
@@ -64,4 +65,4 @@ Após, criaremos a Camada de Persistência, dentro de `me.dio.carrinhoApi` , ond
 
 Criadas as interfaces, extenderemos a interface através do `JpaRepository<T, ID>`, `T: Objeto da Interface, ID: Tipo do Id do Objeto da Interface `, facilitando sua conexão ao banco de dados e abstraindo várias linhas de código
 
-<h1 style="color:blue">Aula 03</h1>
+<h1 style="color:blue"></h1>
