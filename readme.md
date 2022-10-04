@@ -1,4 +1,4 @@
-## Aula 01
+<h1 style="color:red">Aula 01</h1>
 
 - Domínio da Aplicação (POO)
 - Consumo da API (iFood)
@@ -29,13 +29,13 @@
 ### Diagrama ER
 ![Diagrama ER](./Diagrama%20ER.jpeg)
 
-# Aula 02
+<h1 style="color:red">Aula 02</h1>
 
 ## Construção de uma `API REST` com `JAVA` e `SPRING BOOT`
 - Objetivo da aula:
     - A partir da abstração realizada na aula anterior, iremos modelar e desenvolver uma API REST usando a linguagem de programação Java e o framework Spring Boot. Para isso, entenderemos o estilo arquitetural REST e a estrutura de projetos Spring.
 
-###### Arquitetura de uma Aplicação SpringBoot
+##### Arquitetura de uma Aplicação SpringBoot
 ![SpringBoot Architecture](./SpringBoot%20Architecture.jpeg)
 
 ```html
@@ -55,10 +55,27 @@ Utilizaremos as seguintes dependências:
         > Usado neste caso para abstrair os Constructors, Getters and Setters, etc...
 ```
 
-Criamos também um arquivo `data.sql` dentro do folder `resources` a fim de testarmos o carrinho de compras, adicionando as classes `restaurante, cliente, produto, carrinho` seus respectivos valores/nomes vistos no Banco de Dados.
+Criamos também um arquivo `data.sql` dentro do folder
+`resources` a fim de testarmos o carrinho de compras,
+adicionando as classes `restaurante, cliente, produto, carrinho`
+seus respectivos valores/nomes vistos no Banco de Dados.
 
-Após, criaremos a Camada de Persistência, dentro de `me.dio.carrinhoApi` , onde estarão as classes (Interfaces) que se conectaram com o Banco de Dados, criando apenas aonde possuem tabelas, no caso, as classes que possuem `@Entity` 
+Após, criaremos a Camada de Persistência, dentro de
+`me.dio.carrinhoApi` , onde estarão as classes (Interfaces)
+que se conectaram com o Banco de Dados, criando apenas aonde
+possuem tabelas, no caso, as classes que possuem `@Entity` 
 
-Criadas as interfaces, extenderemos a interface através do `JpaRepository<T, ID>`, `T: Objeto da Interface, ID: Tipo do Id do Objeto da Interface `, facilitando sua conexão ao banco de dados e abstraindo várias linhas de código
+Criadas as interfaces, extenderemos a interface através do 
+`JpaRepository<T, ID>`, `T: Tabela, ID: Primary Key`, facilitando
+sua conexão ao banco de dados e abstraindo várias linhas de
+código
 
-<h1 style="color:blue"></h1>
+<h1 style="color:red">Aula 03</h1>
+
+Criamos o package `resources` a fim de remeter a parte de controller 
+da API, para se comunicar com os métodos HTTP, utilizando um DTO
+
+Package repository armazena as interfaces que se conectam com os
+banco de dados, com `@JpaRepository<tabela, primary key>`, indo para
+o package resources, sendo a camada da API, aonde se agrupam os endpoints
+(acesso a API)...
