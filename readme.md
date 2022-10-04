@@ -1,8 +1,38 @@
+<h3>Features</h3>
+
+- [x] Incluir itens no carrinho<br>
+- [x] Visualizar carrinho<br>
+- [x] Fechar carrinho<br>
+- [x] Excluir item do carrinho<br>
+
+
+<table>
+<tr>
+	<th>Ferramenta</th>
+	<th>Versão</th>
+</tr>
+<tr>
+	<td>Java JDK</td>
+	<td>17</td>
+</tr>
+<tr>
+	<td>Git</td>
+	<td>2.**</td>
+</tr>
+<tr>
+	<td>Gradle</td>
+	<td>7.**</td>
+</tr>
+<tr>
+	<td>Postman</td>
+	<td>9.**</td>
+</tr>
+</table>
 <h1 style="color:red">Aula 01</h1>
 
 - Domínio da Aplicação (POO)
 - Consumo da API (iFood)
-     ![Requisição API](.//Requisi%C3%A7%C3%A3oAPI.png)
+  ![Requisição API](.//Requisi%C3%A7%C3%A3oAPI.png)
 - Passo a passo Pensamento Computacional    
     - Coletar os dados
     - Analisar os dados
@@ -11,6 +41,8 @@
     - Trabalhar a Abstração
     - Criar os algoritmos(Sequência de pequenas soluções)
     - Construir Modelos(Simular, testar, experimentar)
+
+
 
 ### Paradigma de Programação Orientada a Objetos (POO)
 > Modelo de análise, projeto e programação baseado na aproximação entre o mundo real e o mundo virtual, através da criação e interação entre Classes, Atributos, Métodos, objetos, entre outros...
@@ -40,6 +72,7 @@
 
 ```html
 Utilizaremos as seguintes dependências:
+
     - Spring WEB (RESTful)
         > Apache Tomcat Container.
 
@@ -53,6 +86,9 @@ Utilizaremos as seguintes dependências:
     
     - Lombok (Optional)
         > Usado neste caso para abstrair os Constructors, Getters and Setters, etc...
+    
+    - SpringFox Boot Starter
+        > Swagger UI
 ```
 
 Criamos também um arquivo `data.sql` dentro do folder
@@ -73,7 +109,7 @@ código
 <h1 style="color:red">Aula 03</h1>
 
 Criamos o package `resources` a fim de remeter a parte de controller 
-da API, para se comunicar com os métodos HTTP, utilizando um DTO
+da API, para se comunicar com os métodos HTTP, utilizando um DTO.
 
 Package repository armazena as interfaces que se conectam com os
 banco de dados, com `@JpaRepository<tabela, primary key>`, indo para
