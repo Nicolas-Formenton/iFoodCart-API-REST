@@ -1,3 +1,12 @@
+No Terminal/Console:
+<ol>
+	<li>Faça um clone do projeto na sua máquina: <code>git clone https://github.com/nicolas-formenton/iFoodDevWeek-Java.git</code></li>
+	<li>Entre na pasta raiz do projeto: <code>cd carrinhoApi</code></li>
+	<li>Rode o comando: <code>./gradlew clean compile</code></li>
+	<li>E então, rode: <code>./gradlew bootrun</code></li>
+	<li>Com a aplicação "de pé", clique aqui: <a href="http://localhost:8080/swagger-ui/#/">http://localhost:8081/swagger-ui/#/</a></li>
+</ol>
+
 <h3>Features</h3>
 
 - [x] Incluir itens no carrinho<br>
