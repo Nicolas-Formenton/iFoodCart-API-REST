@@ -8,6 +8,7 @@ import me.dio.carrinhoApi.model.Restaurante;
 import me.dio.carrinhoApi.repository.CarrinhoRepository;
 import me.dio.carrinhoApi.repository.ProdutoRepository;
 import me.dio.carrinhoApi.repository.ItemRepository;
+import me.dio.carrinhoApi.repository.RestauranteRepository;
 import me.dio.carrinhoApi.resource.dto.ItemDto;
 import me.dio.carrinhoApi.service.CarrinhoService;
 import org.springframework.stereotype.Service;
@@ -21,6 +22,7 @@ public class CarrinhoServiceImpl implements CarrinhoService {
     private final CarrinhoRepository carrinhoRepository;
     private final ProdutoRepository produtoRepository;
     private final ItemRepository itemRepository;
+    private final RestauranteRepository restauranteRepository;
 
     @Override
     public Item incluirItemCarrinho(ItemDto itemDto) {
@@ -111,4 +113,28 @@ public class CarrinhoServiceImpl implements CarrinhoService {
         return carrinhoRepository.save(carrinho);
 
     }
+
+    @Override
+    public Carrinho buscarPorId(Long id) {
+        return carrinhoRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Id '%d' não encontrado".formatted(id)));
+    }
+
+    @Override
+    public void deletar(Long id) {
+        Carrinho carrinhoParaDeletar = buscarPorId(id);
+        if (carrinhoParaDeletar.getItens().isEmpty()){
+            carrinhoRepository.delete(carrinhoParaDeletar);
+            System.out.println("Carrinho Deletado!");
+        }
+        else if(carrinhoParaDeletar.isFechada()) {
+            throw new RuntimeException("Este carrinho já está fechado, não é possível deletá-lo!");
+        }
+        else {
+            throw new RuntimeException("Esvazie o carrinho antes para poder deletar!");
+        }
+    }
+
+
+
 }

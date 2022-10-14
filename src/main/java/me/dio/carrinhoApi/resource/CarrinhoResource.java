@@ -27,4 +27,9 @@ public class CarrinhoResource {
                                    @RequestParam("formaPagamento") int formaPagamento){
         return carrinhoService.fecharCarrinho(carrinhoId, formaPagamento);
     }
+
+    @DeleteMapping("/deletar/{id}")
+    public void deletar(@PathVariable("id") Long id){
+        carrinhoService.deletar(id);
+    }
 }
